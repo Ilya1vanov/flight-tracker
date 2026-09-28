@@ -344,6 +344,7 @@ You can solder a bridge between GPIO 4 and 18 to enable PWM for less screen flic
 **During the script:**
 - Interface board type: **Bonnet** (Option 1)
 - **Quality** if you soldered the jumper, **Convenience** if not
+- 2 to the dedicated core
 
 After the script completes, copy the rgbmatrix module to system Python so it works without a venv:
 
@@ -360,6 +361,8 @@ You should see `ok` printed. If not, do not continue.
 
 ```bash
 cd ~/rpi-rgb-led-matrix/examples-api-use
+make
+ls -l demo
 ```
 
 If you did **not** solder:
